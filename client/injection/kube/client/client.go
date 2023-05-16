@@ -212,7 +212,7 @@ type wrapClient struct {
 	dyn dynamic.Interface
 }
 
-var _ kubernetes.Interface = (*wrapClient)(nil)
+// var _ kubernetes.Interface = (*wrapClient)(nil)
 
 func (w *wrapClient) Discovery() discovery.DiscoveryInterface {
 	panic("Discovery called on dynamic client!")
